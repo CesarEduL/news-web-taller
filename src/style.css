@@ -1,0 +1,55 @@
+/* Base Variables */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #2563eb;
+  --secondary-color: #3b82f6;
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --card-background: #f3f4f6;
+  --border-color: #e5e7eb;
+}
+
+.dark-mode {
+  --background-color: #1f2937;
+  --text-color: #f3f4f6;
+  --card-background: #374151;
+  --border-color: #4b5563;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* App Layout Styles */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Header Component Styles */
+.header {
+  background-color: var(--background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
