@@ -49,6 +49,10 @@ const routes = [
   {
     path: '/',
     component: () => import('./views/HomeView.vue')
+  },
+  {
+    path: '/post/:id',
+    component: () => import('./views/PostView.vue')
   }
 ]
 
