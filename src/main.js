@@ -55,6 +55,10 @@ const routes = [
     component: () => import('./views/PostView.vue')
   },
   {
+    path: '/trending',
+    component: () => import('./views/TrendingView.vue')
+  },
+  {
     path: '/categories',
     component: () => import('./views/CategoriesView.vue')
   },
